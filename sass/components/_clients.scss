@@ -1,0 +1,32 @@
+.clients__list {
+  display: flex;
+  gap: 30px;
+}
+
+.clients__link {
+  width: 170px;
+  height: 92px;
+  border: 1px solid $grey-soc-item-color;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  transition: border-color $transition-default;
+
+  &:hover,
+  &:focus {
+    border-color: $accent-color;
+  }
+}
+
+.clients__icon {
+  fill: $grey-soc-item-color;
+
+  transition: fill $transition-default;
+
+  .clients__link:hover &,
+  .clients__link:focus & {
+    fill: $accent-color;
+  }
+}

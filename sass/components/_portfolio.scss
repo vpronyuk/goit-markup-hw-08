@@ -1,0 +1,13 @@
+.radiobutton__splitter {
+  margin-bottom: 50px;
+}
+
+.cards__position {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.cards__item {
+  width: calc((100% - 60px) / 3);
+}
