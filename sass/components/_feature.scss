@@ -1,6 +1,6 @@
 .feature__list {
-  display: flex;
-  gap: 30px;
+  // display: flex;
+  // gap: 30px;
 }
 
 .feature__item::before {
@@ -40,9 +40,14 @@
 
   color: $primary-title-color;
   text-transform: uppercase;
+  text-align: center;
 }
 
 .feature__text {
   line-height: 1.71;
-  max-width: 270px;
+  max-width: 100%;
+}
+
+.feature__text:not(:last-child) {
+  margin-bottom: 30px;
 }

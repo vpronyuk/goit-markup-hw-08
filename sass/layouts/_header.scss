@@ -3,87 +3,87 @@
 }
 
 .menu {
-  display: flex;
-  align-items: center;
-  gap: 50px;
+  // display: flex;
+  // align-items: center;
+  // gap: 50px;
 }
 
 .header__section {
-  display: flex;
-  align-items: center;
+  // display: flex;
+  // align-items: center;
 }
 .menu__item {
-  display: block;
-  padding-top: 32px;
-  padding-bottom: 32px;
+  // display: block;
+  // padding-top: 32px;
+  // padding-bottom: 32px;
 
-  font-weight: 500;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
+  // font-weight: 500;
+  // line-height: 1.14;
+  // letter-spacing: 0.02em;
 
-  color: $primary-title-color;
-  text-decoration: none;
+  // color: $primary-title-color;
+  // text-decoration: none;
 
-  transition: color $transition-default;
+  // transition: color $transition-default;
 }
 
 .menu__item--active {
-  position: relative;
-  color: $accent-color;
+  // position: relative;
+  // color: $accent-color;
 }
 
 .menu__item--active::after {
-  position: absolute;
-  bottom: -1px;
-  content: "";
-  display: block;
+  // position: absolute;
+  // bottom: -1px;
+  // content: "";
+  // display: block;
 
-  width: 100%;
-  height: 4px;
-  border-radius: 2px;
-  background-color: $accent-color;
+  // width: 100%;
+  // height: 4px;
+  // border-radius: 2px;
+  // background-color: $accent-color;
 }
 
 .menu__item:hover,
 .menu__item:focus {
-  color: $accent-color;
+  // color: $accent-color;
 }
 
 .connect {
-  display: flex;
-  gap: 50px;
-  margin-left: auto;
+  // display: flex;
+  // gap: 50px;
+  // margin-left: auto;
 }
 
 .connect__item {
-  display: flex;
-  padding-top: 32px;
-  padding-bottom: 32px;
-  align-items: center;
+  // display: flex;
+  // padding-top: 32px;
+  // padding-bottom: 32px;
+  // align-items: center;
 
-  font-weight: 500;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
+  // font-weight: 500;
+  // line-height: 1.14;
+  // letter-spacing: 0.02em;
 
-  color: inherit;
-  text-decoration: none;
+  // color: inherit;
+  // text-decoration: none;
 
-  transition: color $transition-default;
+  // transition: color $transition-default;
 }
 
 .connect__icon {
-  margin-right: 10px;
-  fill: currentColor;
+  //   margin-right: 10px;
+  //   fill: currentColor;
 
-  transition: fill $transition-default;
+  //   transition: fill $transition-default;
+  // }
+
+  // .connect__item:hover,
+  // .connect__item:focus {
+  //   color: $accent-color;
 }
 
-.connect__item:hover,
-.connect__item:focus {
-  color: $accent-color;
-}
-
-.connect__item:hover .connect__icon,
-.connect__item:focus .connect__icon {
-  fill: $accent-color;
-}
+// .connect__item:hover .connect__icon,
+// .connect__item:focus .connect__icon {
+//   fill: $accent-color;
+// }
