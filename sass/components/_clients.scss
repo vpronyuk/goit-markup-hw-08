@@ -1,15 +1,23 @@
 .clients__list {
   display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
 }
 
 .clients__item {
-  // display: flex;
   width: calc((100% - 2 * 30px) / 2);
-  margin: 15px;
+
+  @include tablet {
+    width: calc((100% - 3 * 30px) / 3);
+  }
+
+  @include desktop {
+    width: 170px;
+  }
 }
 
 .clients__link {
-  width: 210px;
+  max-width: 210px;
   height: 92px;
   border: 1px solid $grey-soc-item-color;
   border-radius: 4px;
@@ -23,6 +31,14 @@
   &:focus {
     border-color: $accent-color;
   }
+
+  @include tablet {
+    max-width: 226px;
+  }
+
+  // @include desktop {
+  //   max-width: 170px;
+  // }
 }
 
 .clients__icon {

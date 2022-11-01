@@ -678,7 +678,7 @@ body {
 }
 @media screen and (min-width: 768px) {
   .feature__item {
-    width: calc((100% - 30px) / 2);
+    width: calc((100% - 60px) / 2);
   }
 }
 @media screen and (min-width: 1200px) {
@@ -744,7 +744,7 @@ body {
 }
 @media screen and (min-width: 768px) {
   .team__card {
-    width: calc((100% - 30px) / 2);
+    width: calc((100% - 60px) / 2);
   }
 }
 @media screen and (min-width: 1200px) {
@@ -779,15 +779,26 @@ body {
 
 .clients__list {
   display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
 }
 
 .clients__item {
   width: calc((100% - 60px) / 2);
-  margin: 15px;
+}
+@media screen and (min-width: 768px) {
+  .clients__item {
+    width: calc((100% - 90px) / 3);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .clients__item {
+    width: 170px;
+  }
 }
 
 .clients__link {
-  width: 210px;
+  max-width: 210px;
   height: 92px;
   border: 1px solid #afb1b8;
   border-radius: 4px;
@@ -798,6 +809,11 @@ body {
 }
 .clients__link:hover, .clients__link:focus {
   border-color: #2196f3;
+}
+@media screen and (min-width: 768px) {
+  .clients__link {
+    max-width: 226px;
+  }
 }
 
 .clients__icon {
