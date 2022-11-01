@@ -73,6 +73,12 @@ body {
   padding-top: 60px;
   padding-bottom: 60px;
 }
+@media screen and (min-width: 1200px) {
+  .section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
 
 .logo {
   font-family: "Raleway", sans-serif;
@@ -652,31 +658,33 @@ body {
   }
 }
 
-.feature__item::before {
+.feature__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.feature__icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin-bottom: 30px;
-  display: block;
-  content: "";
   height: 120px;
   background-color: #f5f4fa;
-  background-size: 70px 70px;
-  background-repeat: no-repeat;
-  background-position: center;
 }
 
-.icon__antenna::before {
-  background-image: url("../images/index-page-img/antenna.svg");
+.feature__item {
+  width: 100%;
 }
-
-.icon__clock::before {
-  background-image: url("../images/index-page-img/clock.svg");
+@media screen and (min-width: 768px) {
+  .feature__item {
+    width: calc((100% - 30px) / 2);
+  }
 }
-
-.icon__diagram::before {
-  background-image: url("../images/index-page-img/diagram.svg");
-}
-
-.icon__astronaut::before {
-  background-image: url("../images/index-page-img/astronaut.svg");
+@media screen and (min-width: 1200px) {
+  .feature__item {
+    width: 270px;
+  }
 }
 
 .feature__subtitle {
@@ -691,11 +699,7 @@ body {
 
 .feature__text {
   line-height: 1.71;
-  max-width: 100%;
-}
-
-.feature__text:not(:last-child) {
-  margin-bottom: 30px;
+  flex-basis: 100%;
 }
 
 .activity {

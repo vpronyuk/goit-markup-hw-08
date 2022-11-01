@@ -1,34 +1,28 @@
 .feature__list {
-  // display: flex;
-  // gap: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
 }
 
-.feature__item::before {
+.feature__icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin-bottom: 30px;
-  display: block;
-  content: "";
   height: 120px;
-
   background-color: $grey-bg-color;
-  background-size: 70px 70px;
-  background-repeat: no-repeat;
-  background-position: center;
 }
 
-.icon__antenna::before {
-  background-image: url("../images/index-page-img/antenna.svg");
-}
+.feature__item {
+  width: 100%;
 
-.icon__clock::before {
-  background-image: url("../images/index-page-img/clock.svg");
-}
+  @include tablet {
+    width: calc((100% - 30px) / 2);
+  }
 
-.icon__diagram::before {
-  background-image: url("../images/index-page-img/diagram.svg");
-}
-
-.icon__astronaut::before {
-  background-image: url("../images/index-page-img/astronaut.svg");
+  @include desktop {
+    width: 270px;
+  }
 }
 
 .feature__subtitle {
@@ -45,9 +39,5 @@
 
 .feature__text {
   line-height: 1.71;
-  max-width: 100%;
-}
-
-.feature__text:not(:last-child) {
-  margin-bottom: 30px;
+  flex-basis: 100%;
 }
