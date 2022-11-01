@@ -3,7 +3,7 @@
   padding-bottom: 118px;
   margin: 0 auto;
 
-  // background-color: #c4c4c4;
+  background-color: #c4c4c4;
   background-image: linear-gradient(
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
@@ -14,6 +14,16 @@
   background-size: cover;
   max-width: $mobile;
   text-align: center;
+
+  @include tablet {
+    max-width: $tablet;
+  }
+
+  @include desktop {
+    padding-top: 200px;
+    padding-bottom: 200px;
+    max-width: 1600px;
+  }
 }
 
 .hero__title {
@@ -28,6 +38,12 @@
 
   color: $primary-white-color;
   text-transform: uppercase;
+
+  @include desktop {
+    max-width: 696px;
+    font-size: 44px;
+    line-height: 1.36;
+  }
 }
 
 .hero__button {
@@ -38,7 +54,7 @@
   font-family: inherit;
   font-weight: 700;
   font-size: 16px;
-  line-height: 1.87;
+  line-height: 1.88;
   letter-spacing: 0.06em;
 
   color: $primary-white-color;
@@ -55,30 +71,8 @@
   &:focus {
     background-color: $interactive-btn-color;
   }
+
+  @include desktop {
+    padding: 10px 32px;
+  }
 }
-
-//-------------------
-
-// .hero {
-//   padding-top: 200px;
-//   padding-bottom: 200px;
-//   margin: 0 auto;
-
-//   background-color: #c4c4c4;
-//   background-image: linear-gradient(
-//       rgba(47, 48, 58, 0.4),
-//       rgba(47, 48, 58, 0.4)
-//     ),
-//     url("../images/index-page-img/hero-bg.jpg");
-//   background-repeat: no-repeat;
-//   background-position: center;
-//   background-size: cover;
-//   max-width: 1600px;
-//   text-align: center;
-
-//   @media screen and (max-width: $mobile) {
-//     padding-top: 118px;
-//     padding-bottom: 118px;
-//     max-width: $mobile;
-//   }
-// }
