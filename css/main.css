@@ -705,6 +705,33 @@ body {
 .activity {
   display: none;
 }
+@media screen and (min-width: 1200px) {
+  .activity {
+    display: contents;
+    padding-top: 0;
+  }
+  .activity__list {
+    display: flex;
+    gap: 30px;
+  }
+  .activity__thumb {
+    position: relative;
+  }
+  .activity__text {
+    position: absolute;
+    bottom: 0;
+    font-weight: 700;
+    line-height: 1.14;
+    text-align: center;
+    text-transform: uppercase;
+    color: #ffffff;
+    height: 70px;
+    width: 100%;
+    background-color: rgba(47, 48, 58, 0.8);
+    padding-top: 27px;
+    padding-bottom: 27px;
+  }
+}
 
 .team {
   background-color: #f5f4fa;
