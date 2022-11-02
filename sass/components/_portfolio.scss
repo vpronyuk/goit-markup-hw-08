@@ -1,5 +1,13 @@
 .radiobutton__splitter {
-  margin-bottom: 50px;
+  margin-bottom: 40px;
+
+  @include tablet {
+    margin-bottom: 30px;
+  }
+
+  @include desktop {
+    margin-bottom: 50px;
+  }
 }
 
 .cards__position {
@@ -9,5 +17,16 @@
 }
 
 .cards__item {
-  width: calc((100% - 60px) / 3);
+  width: 100%;
+  // border-right: 1px solid $cards-border-color;
+  // border-bottom: 1px solid $cards-border-color;
+  // border-left: 1px solid $cards-border-color;
+
+  @include tablet {
+    width: calc((100% - 30px) / 2);
+  }
+
+  @include desktop {
+    width: calc((100% - 60px) / 3);
+  }
 }
