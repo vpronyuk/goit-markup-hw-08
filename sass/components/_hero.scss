@@ -16,7 +16,7 @@
   }
 
   @include tablet {
-    max-width: $tablet;
+    min-width: $tablet;
     background-image: $bg-gradient,
       url("../images/index-page-img/tablet/hero-bg-tabl.jpg");
     @include retina {

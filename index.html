@@ -144,7 +144,11 @@
             <li>
               <div class="activity__thumb">
                 <img
-                  src="./images/index-page-img/img1.jpg"
+                  srcset="
+                    ./images/index-page-img/desktop/img1.jpg    1x,
+                    ./images/index-page-img/desktop/img1-2x.jpg 2x
+                  "
+                  src="./images/index-page-img/desktop/img1.jpg"
                   alt="Розробка та планування"
                   width="370"
                   height="294"
@@ -155,7 +159,11 @@
             <li>
               <div class="activity__thumb">
                 <img
-                  src="./images/index-page-img/img2.jpg"
+                  srcset="
+                    ./images/index-page-img/desktop/img2.jpg    1x,
+                    ./images/index-page-img/desktop/img2-2x.jpg 2x
+                  "
+                  src="./images/index-page-img/desktop/img2.jpg"
                   alt="Адаптація під мобільні платформи"
                   width="370"
                   height="294"
@@ -166,7 +174,11 @@
             <li>
               <div class="activity__thumb">
                 <img
-                  src="./images/index-page-img/img3.jpg"
+                  srcset="
+                    ./images/index-page-img/desktop/img3.jpg    1x,
+                    ./images/index-page-img/desktop/img3-2x.jpg 2x
+                  "
+                  src="./images/index-page-img/desktop/img3.jpg"
                   alt="Дизайн"
                   width="370"
                   height="294"
@@ -183,12 +195,35 @@
           <h2 class="title">Наша команда</h2>
           <ul class="list team__list">
             <li class="team__card">
-              <img
-                src="./images/index-page-img/pdesigner.jpg"
-                alt="Фото дизайнера продукту"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/index-page-img/desktop/pdesigner.jpg    1x,
+                    ./images/index-page-img/desktop/pdesigner-2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/index-page-img/tablet/pdesigner-tabl.jpg    1x,
+                    ./images/index-page-img/tablet/pdesigner-tabl-2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/index-page-img/mobile/pdesigner-mob.jpg    1x,
+                    ./images/index-page-img/mobile/pdesigner-mob-2x.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+                <img
+                  src="./images/index-page-img/desktop/pdesigner.jpg"
+                  alt="Фото дизайнера продукту"
+                  width="270"
+                  height="260"
+                />
+              </picture>
               <div class="team__content">
                 <h3 class="team__member">Ігор Дем'яненко</h3>
                 <p class="team__role">Product Designer</p>
@@ -234,12 +269,35 @@
             </li>
 
             <li class="team__card">
-              <img
-                src="./images/index-page-img/frontend.jpg"
-                alt="Фото фронтенд розробника"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/index-page-img/desktop/frontend.jpg    1x,
+                    ./images/index-page-img/desktop/frontend-2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/index-page-img/tablet/frontend-tabl.jpg    1x,
+                    ./images/index-page-img/tablet/frontend-tabl-2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/index-page-img/mobile/frontend-mob.jpg    1x,
+                    ./images/index-page-img/mobile/frontend-mob-2x.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+                <img
+                  src="./images/index-page-img/desktop/frontend.jpg"
+                  alt="Фото фронтенд розробника"
+                  width="270"
+                  height="260"
+                />
+              </picture>
               <div class="team__content">
                 <h3 class="team__member">Ольга Рєпіна</h3>
                 <p class="team__role">Frontend Developer</p>
@@ -284,12 +342,36 @@
               </div>
             </li>
             <li class="team__card">
-              <img
-                src="./images/index-page-img/marketing.jpg"
-                alt="Фото маркетолога"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/index-page-img/desktop/marketing.jpg    1x,
+                    ./images/index-page-img/desktop/marketing-2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/index-page-img/tablet/marketing-tabl.jpg    1x,
+                    ./images/index-page-img/tablet/marketing-tabl-2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/index-page-img/mobile/marketing-mob.jpg    1x,
+                    ./images/index-page-img/mobile/marketing-mob-2x.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+                <img
+                  src="./images/index-page-img/desktop/marketing.jpg"
+                  alt="Фото маркетолога"
+                  width="270"
+                  height="260"
+                />
+              </picture>
+
               <div class="team__content">
                 <h3 class="team__member">Микола Тарасов</h3>
                 <p class="team__role">Marketing</p>
@@ -334,12 +416,36 @@
               </div>
             </li>
             <li class="team__card">
-              <img
-                src="./images/index-page-img/udesigner.jpg"
-                alt="Фото графічного дизайнера"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/index-page-img/desktop/udesigner.jpg    1x,
+                    ./images/index-page-img/desktop/udesigner-2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/index-page-img/tablet/udesigner-tabl.jpg    1x,
+                    ./images/index-page-img/tablet/udesigner-tabl-2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/index-page-img/mobile/udesigner-mob.jpg    1x,
+                    ./images/index-page-img/mobile/udesigner-mob-2x.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+                <img
+                  src="./images/index-page-img/desktop/udesigner.jpg"
+                  alt="Фото графічного дизайнера"
+                  width="270"
+                  height="260"
+                />
+              </picture>
+
               <div class="team__content">
                 <h3 class="team__member">Михайло Єрмаков</h3>
                 <p class="team__role">UI Designer</p>
