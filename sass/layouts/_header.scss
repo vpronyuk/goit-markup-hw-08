@@ -1,16 +1,21 @@
 .header {
   border-bottom: 1px solid #ececec;
-}
 
-// .header__logo {
-//   margin-right: 93px;
-// }
+  @include tablet {
+    .header__logo {
+      margin-right: 93px;
+    }
+  }
+}
 
 .menu {
   display: none;
-  // display: flex;
-  align-items: center;
-  gap: 50px;
+
+  @include tablet {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+  }
 }
 
 .header__section {
@@ -56,17 +61,24 @@
 
 .connect {
   display: none;
-  // display: flex;
-  gap: 50px;
-  margin-left: auto;
+
+  @include tablet {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-left: auto;
+  }
+
+  @include desktop {
+    flex-direction: row;
+    gap: 30px;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    align-items: center;
+  }
 }
 
 .connect__item {
-  display: flex;
-  padding-top: 32px;
-  padding-bottom: 32px;
-  align-items: center;
-
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
@@ -75,27 +87,30 @@
   text-decoration: none;
 
   transition: color $transition-default;
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
 }
 
 .connect__icon {
   margin-right: 10px;
   fill: currentColor;
-
   transition: fill $transition-default;
-}
 
-.connect__item:hover,
-.connect__item:focus {
-  color: $accent-color;
-}
-
-.connect__item:hover .connect__icon,
-.connect__item:focus .connect__icon {
-  fill: $accent-color;
+  .connect__item:hover &,
+  .connect__item:focus & {
+    fill: $accent-color;
+  }
 }
 
 .header__btn {
   margin-left: auto;
+
+  @include tablet {
+    display: none;
+  }
 }
 
 .mob-menu {
@@ -104,20 +119,35 @@
   background-color: $primary-white-color;
   width: 100vw;
   height: 100vh;
-  z-index: 1;
   padding-top: 48px;
   padding-bottom: 48px;
+  z-index: 1;
+
+  > .mob-container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow: auto;
+  }
 }
 .add-close__btn {
-  display: block;
-  margin-left: auto;
+  position: absolute;
+  right: 15px;
+  top: 10px;
   background-color: transparent;
   border: transparent;
+  transition: fill $transition-default;
+
+  &:hover {
+    fill: $accent-color;
+  }
 }
-.addmenu__icon--close {
-}
+
 .mob-menu__list {
-  margin-bottom: 302px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
 }
 
 .mob-menu__item {
@@ -127,13 +157,25 @@
   letter-spacing: 0.02em;
   color: $primary-title-color;
   text-decoration: none;
+
+  transition: color $transition-default;
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
 }
+
 .mob-menu__item--active {
+  color: $accent-color;
 }
 .mob-connect {
 }
 
 .mob-connect__list {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
   margin-bottom: 64px;
 }
 .mob-connect__item {
@@ -143,16 +185,38 @@
   letter-spacing: 0.02em;
   text-decoration: none;
   color: $primary-text-color;
-}
 
+  transition: color $transition-default;
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
+}
 .mob-connect__item:last-child {
   font-size: 24px;
   line-height: 1.17;
 }
 .mob-soc__list {
+  display: flex;
+  gap: 10px;
 }
-.mob-soc__item {
+.mob-soc__item:not(:last-child) {
+  border-right: 1px solid rgba(33, 33, 33, 0.2);
+  padding-right: 10px;
 }
+
 .mob-soc__link {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.22;
+  letter-spacing: 0.02em;
+  color: $primary-text-color;
   text-decoration: none;
+  transition: color $transition-default;
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
 }

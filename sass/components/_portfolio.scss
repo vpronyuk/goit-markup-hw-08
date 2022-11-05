@@ -14,10 +14,14 @@
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
+  justify-content: center;
 }
 
 .cards__item {
-  width: 100%;
+  // display: flex;
+  // flex-wrap: wrap;
+  // gap: 30px;
+  // width: 100%;
   // border-right: 1px solid $cards-border-color;
   // border-bottom: 1px solid $cards-border-color;
   // border-left: 1px solid $cards-border-color;
