@@ -76,7 +76,7 @@
   cursor: pointer;
   border-color: transparent;
   border-radius: 4px;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  box-shadow: $btn-shadow;
 
   transition: background-color $transition-default;
 

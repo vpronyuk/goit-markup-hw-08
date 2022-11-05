@@ -95,6 +95,10 @@ body {
   color: #ffffff;
 }
 
+.header__logo {
+  margin-right: 93px;
+}
+
 .title {
   margin-bottom: 30px;
   font-weight: 700;
@@ -285,6 +289,85 @@ body {
 
 .header {
   border-bottom: 1px solid #ececec;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+
+.header__section {
+  display: flex;
+  align-items: center;
+}
+
+.menu__item {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: #212121;
+  text-decoration: none;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.menu__item--active {
+  position: relative;
+  color: #2196f3;
+}
+
+.menu__item--active::after {
+  position: absolute;
+  bottom: -1px;
+  content: "";
+  display: block;
+  width: 100%;
+  height: 4px;
+  border-radius: 2px;
+  background-color: #2196f3;
+}
+
+.menu__item:hover,
+.menu__item:focus {
+  color: #2196f3;
+}
+
+.connect {
+  display: flex;
+  gap: 50px;
+  margin-left: auto;
+}
+
+.connect__item {
+  display: flex;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  align-items: center;
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: inherit;
+  text-decoration: none;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.connect__icon {
+  margin-right: 10px;
+  fill: currentColor;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.connect__item:hover,
+.connect__item:focus {
+  color: #2196f3;
+}
+
+.connect__item:hover .connect__icon,
+.connect__item:focus .connect__icon {
+  fill: #2196f3;
 }
 
 .footer {
@@ -502,7 +585,6 @@ body {
 }
 
 .feedback__input {
-  padding-left: 40px;
   height: 40px;
   width: 100%;
   border: 1px solid rgba(33, 33, 33, 0.2);
@@ -580,10 +662,17 @@ body {
 
 .policy__label {
   color: #757575;
+  font-size: 12px;
   line-height: 1.17;
   display: flex;
   align-items: center;
   justify-content: center;
+}
+@media screen and (min-width: 1200px) {
+  .policy__label {
+    font-size: 14px;
+    line-height: 1.71;
+  }
 }
 .policy__label span {
   width: 16px;
@@ -598,11 +687,6 @@ body {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-@media screen and (min-width: 1200px) {
-  .policy__label {
-    line-height: 1.71;
-  }
 }
 
 .policy__link {
