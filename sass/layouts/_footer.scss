@@ -14,10 +14,10 @@
 .footer__tablet-top {
   @include tablet {
     margin-bottom: 60px;
-    padding-left: 76px;
-    padding-right: 89px;
+    // padding-left: 76px;
+    // padding-right: 89px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: baseline;
   }
 }
@@ -126,6 +126,7 @@
     color: rgba(255, 255, 255, 0.6);
   }
   @include tablet {
+    // display: block;
     max-width: 450px;
   }
 }
@@ -153,6 +154,9 @@
 
   cursor: pointer;
   transition: background-color $transition-default;
+  @include tablet {
+    // display: block;
+  }
 }
 
 .form__btn:hover,
@@ -166,8 +170,10 @@
 }
 
 .input__btn {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: baseline;
+  @include tablet {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 }
