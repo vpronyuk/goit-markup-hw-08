@@ -1089,6 +1089,11 @@ body {
   gap: 30px;
   justify-content: center;
 }
+@media screen and (min-width: 768px) {
+  .cards__position {
+    justify-content: flex-start;
+  }
+}
 
 @media screen and (min-width: 768px) {
   .cards__item {
