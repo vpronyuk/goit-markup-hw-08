@@ -18,6 +18,11 @@
   width: 450px;
   border-radius: 4px;
 
+  @include desktop {
+    min-height: 581px;
+    width: 528px;
+  }
+
   background-color: $primary-white-color;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -26,11 +31,6 @@
 
   .feedback__backdrop.is-hidden & {
     transform: translate(-50%, -50%) scale(1.5);
-  }
-
-  @include desktop {
-    min-height: 581px;
-    width: 528px;
   }
 }
 
@@ -42,13 +42,14 @@
   font-weight: 700;
   font-size: 20px;
   line-height: 1.5;
-  text-align: center;
-  letter-spacing: 0.03em;
-  color: $primary-title-color;
 
   @include desktop {
     line-height: 1.15;
   }
+
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: $primary-title-color;
 }
 
 .feedback__item {
@@ -71,6 +72,7 @@
 }
 
 .feedback__input {
+  padding-left: 42px;
   height: 40px;
   width: 100%;
   border: 1px solid rgba(33, 33, 33, 0.2);
