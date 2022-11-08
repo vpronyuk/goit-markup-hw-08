@@ -2,8 +2,7 @@
   display: none;
 
   @include desktop {
-    display: contents;
-    padding-top: 0;
+    display: flex;
 
     &__list {
       display: flex;

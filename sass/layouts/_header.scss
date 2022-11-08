@@ -75,13 +75,13 @@
   @include desktop {
     flex-direction: row;
     gap: 30px;
-    padding-top: 32px;
-    padding-bottom: 32px;
     align-items: center;
   }
 }
 
 .connect__item {
+  padding-top: 32px;
+  padding-bottom: 32px;
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
@@ -95,16 +95,46 @@
   &:focus {
     color: $accent-color;
   }
+
+  @include desktop {
+    display: flex;
+    align-items: center;
+  }
 }
 
 .connect__icon {
   margin-right: 10px;
+
   fill: currentColor;
   transition: fill $transition-default;
 
   .connect__item:hover &,
   .connect__item:focus & {
     fill: $accent-color;
+  }
+}
+
+.connect__icon--mail {
+  @include tablet {
+    width: 14px;
+    height: 10px;
+  }
+
+  @include desktop {
+    width: 16px;
+    height: 12px;
+  }
+}
+
+.connect__icon--tel {
+  @include tablet {
+    width: 10px;
+    height: 14px;
+  }
+
+  @include desktop {
+    width: 10px;
+    height: 16px;
   }
 }
 

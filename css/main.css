@@ -161,13 +161,13 @@ body {
   .connect {
     flex-direction: row;
     gap: 30px;
-    padding-top: 32px;
-    padding-bottom: 32px;
     align-items: center;
   }
 }
 
 .connect__item {
+  padding-top: 32px;
+  padding-bottom: 32px;
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
@@ -178,6 +178,12 @@ body {
 .connect__item:hover, .connect__item:focus {
   color: #2196f3;
 }
+@media screen and (min-width: 1200px) {
+  .connect__item {
+    display: flex;
+    align-items: center;
+  }
+}
 
 .connect__icon {
   margin-right: 10px;
@@ -186,6 +192,32 @@ body {
 }
 .connect__item:hover .connect__icon, .connect__item:focus .connect__icon {
   fill: #2196f3;
+}
+
+@media screen and (min-width: 768px) {
+  .connect__icon--mail {
+    width: 14px;
+    height: 10px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .connect__icon--mail {
+    width: 16px;
+    height: 12px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .connect__icon--tel {
+    width: 10px;
+    height: 14px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .connect__icon--tel {
+    width: 10px;
+    height: 16px;
+  }
 }
 
 .header__btn {
@@ -1018,8 +1050,7 @@ body {
 }
 @media screen and (min-width: 1200px) {
   .activity {
-    display: contents;
-    padding-top: 0;
+    display: flex;
   }
   .activity__list {
     display: flex;
