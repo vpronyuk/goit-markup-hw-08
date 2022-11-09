@@ -15,8 +15,13 @@
   transform: translate(-50%, -50%);
 
   min-height: 609px;
-  width: 450px;
+  width: 95%;
   border-radius: 4px;
+  overflow: auto;
+
+  @include mobile {
+    width: 450px;
+  }
 
   @include desktop {
     min-height: 581px;
